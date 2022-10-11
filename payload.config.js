@@ -1,6 +1,5 @@
 import { buildConfig } from 'payload/config';
 import PayloadUsers from './collections/PayloadUsers';
-import EntranceControls from './collections/EntranceControls';
 import Impresora from './collections/Impresora';
 import Lectora from './collections/Lectora';
 import ConfigTag from './collections/ConfigTag';
@@ -15,7 +14,6 @@ export default buildConfig({
   collections: [
     PayloadUsers,
     Impresora,
-    EntranceControls,
     Lectora,
     ConfigTag,
     Questionnaire,
