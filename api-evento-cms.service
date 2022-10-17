@@ -1,0 +1,12 @@
+[Unit]
+Description=InPulse API CMS
+After=syslog.target network.target
+
+[Service]
+WorkingDirectory=/home/inpulse/api-evento-cms
+ExecStart=/usr/bin/node /home/inpulse/api-evento-cms/server.js
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
