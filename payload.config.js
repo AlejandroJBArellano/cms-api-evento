@@ -5,6 +5,7 @@ import Lectora from './collections/Lectora';
 import ConfigTag from './collections/ConfigTag';
 import Questionnaire from './collections/Questionnaire';
 import ConfigEntrance from './collections/ConfigEntrance';
+import Event from './collections/Event';
 
 export default buildConfig({
   serverURL: 'http://localhost:4000',
@@ -17,6 +18,7 @@ export default buildConfig({
     Lectora,
     ConfigTag,
     Questionnaire,
-    ConfigEntrance
+    ConfigEntrance,
+    Event
   ],
 });
