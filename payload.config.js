@@ -8,7 +8,7 @@ import ConfigEntrance from './collections/ConfigEntrance';
 import Event from './collections/Event';
 
 export default buildConfig({
-  serverURL: 'http://localhost:4000',
+  serverURL: 'http://10.10.2.1:5000',
   admin: {
     user: PayloadUsers.slug,
   },
