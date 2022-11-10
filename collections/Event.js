@@ -50,7 +50,7 @@ const Event = {
         type: 'text',
         required: true
       }, {
-        name: 'organization_role_for_table',
+        name: 'tableColumnNames',
         type: 'array',
         required: true,
         fields: [
