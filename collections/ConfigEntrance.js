@@ -51,11 +51,8 @@ const ConfigEntrance = {
         name: "shortDescription",
         type: "textarea",
         required: true
-      }, {
-        name: "fontColor",
-        type: "text",
-        required: true
-      }, {
+      }, colorField,
+      {
         name: "bringBadgeText",
         type: "text",
         required: true
