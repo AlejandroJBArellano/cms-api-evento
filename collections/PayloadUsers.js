@@ -2,7 +2,7 @@ const PayloadUsers = {
   slug: 'payloadusers',
   auth: true,
   admin: {
-    useAsTitle: 'email',
+    useAsTitle: 'name',
   },
   access: {
     read: () => true,

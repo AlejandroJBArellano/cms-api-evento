@@ -1,3 +1,5 @@
+import colorField from "../types/color.js";
+
 const ConfigEntrance = {
     slug: 'configentrances',
     admin: {
@@ -5,47 +7,28 @@ const ConfigEntrance = {
     },
     fields: [
       {
-        name: 'allowedBadges',
+        name: 'badges',
         type: 'array',
         fields: [
           {
             name: "badge",
             type: "text",
             required: true
-          }, {
-            name: "fontColor",
-            type: "text",
-            required: true
-          }, {
-            name: "img",
-            type: "text",
-            required: true
-          }, {
-            name: "message",
-            type: "text",
-            required: true
-          }
-        ]
-      }, {
-        name: 'deniedBadges',
-        type: 'array',
-        fields: [
+          }, colorField,
           {
-            name: "badge",
-            type: "text",
-            required: true
-          }, {
-            name: "fontColor",
-            type: "text",
-            required: true
-          }, {
-            name: "img",
-            type: "text",
-            required: true
-          }, {
-            name: "message",
-            type: "text",
-            required: true
+            name: "messages",
+            type: "array",
+            fields: [
+              {
+                name: "img",
+                type: "text",
+                required: true
+              }, {
+                name: "message",
+                type: "text",
+                required: true
+              }
+            ]
           }
         ]
       }, {
@@ -70,6 +53,14 @@ const ConfigEntrance = {
         required: true
       }, {
         name: "fontColor",
+        type: "text",
+        required: true
+      }, {
+        name: "bringBadgeText",
+        type: "text",
+        required: true
+      }, {
+        name: "cssGradient",
         type: "text",
         required: true
       }
