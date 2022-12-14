@@ -1,11 +1,12 @@
 import { buildConfig } from 'payload/config';
-import PayloadUsers from './collections/PayloadUsers';
+import ConfigEntrance from './collections/ConfigEntrance';
+import ConfigTag from './collections/ConfigTag';
+import Event from './collections/Event';
 import Impresora from './collections/Impresora';
 import Lectora from './collections/Lectora';
-import ConfigTag from './collections/ConfigTag';
+import Media from './collections/Media';
+import PayloadUsers from './collections/PayloadUsers';
 import Questionnaire from './collections/Questionnaire';
-import ConfigEntrance from './collections/ConfigEntrance';
-import Event from './collections/Event';
 
 export default buildConfig({
   serverURL: 'http://localhost:5000',
@@ -19,6 +20,12 @@ export default buildConfig({
     ConfigTag,
     Questionnaire,
     ConfigEntrance,
-    Event
+    Event,
+    Media
   ],
+  upload: {
+    limits: {
+      fileSize: 50000000
+    }
+  }
 });
