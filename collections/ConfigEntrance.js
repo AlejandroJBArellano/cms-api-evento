@@ -5,6 +5,10 @@ const ConfigEntrance = {
     admin: {
       useAsTitle: 'terminalTitle',
     },
+    labels: {
+      singular: "Configuración de entrada",
+      plural: "Configuraciones de entrada"
+    },
     fields: [
       {
         name: 'badges',

@@ -28,7 +28,7 @@ const Media = {
       },
     ], */
     adminThumbnail: 'thumbnail',
-    mimeTypes: ['image/*'],
+    mimeTypes: ['*'],
   },
 };
 
