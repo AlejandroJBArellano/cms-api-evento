@@ -7,7 +7,7 @@ import Lectora from './collections/Lectora';
 import Media from './collections/Media';
 import PayloadUsers from './collections/PayloadUsers';
 import Questionnaire from './collections/Questionnaire';
-import Register from './collections/Register';
+import Recorder from './collections/Recorder';
 
 export default buildConfig({
   serverURL: 'http://localhost:5000',
@@ -24,7 +24,7 @@ export default buildConfig({
     ConfigEntrance,
     Event,
     Media,
-    Register
+    Recorder
   ],
   upload: {
     limits: {

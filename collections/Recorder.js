@@ -1,5 +1,5 @@
-const Register = {
-    slug: "registers",
+const Recorder = {
+    slug: "recorders",
     admin: {
         useAsTitle: "name"
     },
@@ -11,6 +11,12 @@ const Register = {
         {
             name: "name",
             type: "text",
+            required: true
+        },
+        {
+            name: "pin",
+            type: "text",
+            unique: true,
             required: true
         },
         {
@@ -32,10 +38,11 @@ const Register = {
                     value: "it"
                 }
             ]
-        }
+        },
+
     ],
     timestamps: false,
     versions: false
 }
 
-export default Register
+export default Recorder
