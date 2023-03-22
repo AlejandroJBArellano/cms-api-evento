@@ -1,18 +1,27 @@
 const Lectora = {
     slug: 'lectoras',
     admin: {
-      useAsTitle: 'viewValue',
+      useAsTitle: 'view_value',
     },
     fields: [
       {
-        name: 'viewValue',
+        name: 'view_value',
         type: 'text',
         required: true
-      },      {
-        name: 'value',
-        type: 'text',
+      }, {
+        name: "command_topic",
+        type: "text",
         required: true
-      },
+      }, {
+        name: "data_topic",
+        type: "text",
+        required: true
+      }, {
+        name: "tag_id_topic",
+        type: "text",
+        label: "Tag ID Topic",
+        required: true
+      }
     ],
     timestamps: false,
     versions: false
