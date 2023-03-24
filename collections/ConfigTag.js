@@ -12,7 +12,10 @@ const ConfigTag = {
         name: 'tag_id',
         type: 'text',
         required: true
-      },
+      },      {
+        name: "value",
+        type: "text"
+      }
     ],
     timestamps: false,
     versions: false
