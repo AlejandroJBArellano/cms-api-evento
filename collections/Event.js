@@ -42,7 +42,7 @@ const fieldsForForm = [
     fields: [
       {
         name: "validator",
-        required: true,
+        
         type: "select",
         hasMany: false,
         admin: {
@@ -79,7 +79,7 @@ const fieldsForForm = [
       }, {
         name: "Validator Value",
         type: "text",
-        required: true
+        
       }
     ]
 }
