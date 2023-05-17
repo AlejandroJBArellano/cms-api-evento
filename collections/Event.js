@@ -123,6 +123,64 @@ const Event = {
         fields: [
           ... fieldsForForm
         ]
+      },
+      {
+        name: "customFieldsForVCard",
+        type: "array",
+        fields: [
+          {
+            label: "Campos para VCard",
+            name: "fieldVCard",
+            required: true,
+            type: "select",
+            hasMany: false,
+            admin: {
+              isClearable: true,
+              isSortable: true, // use mouse to drag and drop different values, and sort them according to your choice
+            },
+            options: [
+              {
+                label: "Nombre",
+                value: "firstName"
+              }, {
+                label: "Apellido",
+                value: "lastName"
+              }, {
+                label: "Email",
+                value: "email"
+              }, {
+                label: "Rol",
+                value: "role"
+              }, {
+                label: "Email",
+                value: "email"
+              }, {
+                label: "título",
+                value: "title"
+              }, {
+                label: "Organización",
+                value: "organization"
+              }, {
+                label: "URL",
+                value: "url"
+              }, {
+                label: "Email de trabajo",
+                value: "workEmail"
+              }, {
+                label: "Url de trabajo",
+                value: "workUrl"
+              },{
+                label: "Teléfono de trabajo",
+                value: "workPhone"
+              },
+            ]
+          }, {
+            label: "Campo del asistente en la base de datos",
+            name: "valueAttendee",
+            type: "text",
+            required: true
+          }
+        ]
       }
     ],
     timestamps: false,
