@@ -42,7 +42,7 @@ const fieldsForForm = [
     fields: [
       {
         name: "validator",
-        required: true,
+        
         type: "select",
         hasMany: false,
         admin: {
@@ -79,7 +79,7 @@ const fieldsForForm = [
       }, {
         name: "Validator Value",
         type: "text",
-        required: true
+        
       }
     ]
 }
@@ -95,7 +95,56 @@ const Event = {
         name: 'event_title',
         type: 'text',
         required: true
-      }, {
+      },
+      {
+        name: 'eventId',
+        type: 'text'
+      },
+      {
+        name: 'defaultNFCUrl',
+        type: 'text'
+      },
+      {
+        name: 'initCmd',
+        type: 'text'
+      },
+      {
+        name: 'initCmdValue',
+        type: 'text'
+      },
+      {
+        name: 'enabledNFCApps',
+        type: 'array',
+        fields: [
+          {
+            name: "type",
+            type: "text"
+          },
+          {
+            name: "name",
+            type: "text"
+          },
+          {
+            name: "options",
+            type: "array",
+            fields:[
+              {
+                name:"name",
+                type:"text"
+              },
+              {
+                name:"points",
+                type:"number"
+              },
+              {
+                name:"initialValue",
+                type:"number"
+              }
+            ]
+          }
+        ]
+      }, 
+      {
         name: 'tableColumnNames',
         type: 'array',
         required: true,
